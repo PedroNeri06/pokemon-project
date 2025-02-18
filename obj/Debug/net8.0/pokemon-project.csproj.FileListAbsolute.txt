@@ -1,0 +1,17 @@
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\bin\Debug\net8.0\pokemon-project.exe
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\bin\Debug\net8.0\pokemon-project.deps.json
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\bin\Debug\net8.0\pokemon-project.runtimeconfig.json
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\bin\Debug\net8.0\pokemon-project.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\bin\Debug\net8.0\pokemon-project.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\pokemon-project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\pokemon-project.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\pokemon-project.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\pokemon-project.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\pokemon-project.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\refint\pokemon-project.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\pokemon-project.pdb
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\pokemon-project.genruntimeconfig.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\ref\pokemon-project.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\bin\Debug\net8.0\RestSharp.dll
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\pokemon-project.csproj.AssemblyReference.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\pokemon-.F80FA318.Up2Date
