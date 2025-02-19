@@ -15,3 +15,4 @@ C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\ref\p
 C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\bin\Debug\net8.0\RestSharp.dll
 C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\pokemon-project.csproj.AssemblyReference.cache
 C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\pokemon-.F80FA318.Up2Date
+C:\Users\pedro\OneDrive\Área de Trabalho\pokemon-project\obj\Debug\net8.0\pokemon-project.sourcelink.json

@@ -1,3 +1,4 @@
+using System.Diagnostics.Tracing;
 using System.Reflection.Metadata.Ecma335;
 using Pokemon.Interface;
 
@@ -10,10 +11,17 @@ internal class SelectPokemon : Ioption
 
     public void Function()
     {
-        Console.WriteLine("Digite o nome de um Pokemon valido");
-        string pokemon = Console.ReadLine()!;
-        this._pokemonUrl = $"https://pokeapi.co/api/v2/pokemon/{pokemon}";
+        try
+        {
+            Console.WriteLine("Digite o nome de um Pokemon valido");
+            string pokemon = Console.ReadLine()!;
+            this._pokemonUrl = $"https://pokeapi.co/api/v2/pokemon/{pokemon}";
+        }
+        catch
+        {
+            Console.WriteLine("pokemon invalido");
+            return;
+        }
         return;
-
     }
 }

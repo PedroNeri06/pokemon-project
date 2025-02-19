@@ -1,9 +1,10 @@
 namespace Pokemon.Modules;
 using Pokemon.Interface;
+using Pokemon.Object;
 
 internal class Options
 {
-    private List<Ioption> options = new List<Ioption>();
+    public List<Ioption> options = new List<Ioption>();
     public void AddOption(Ioption op)
     {
         Console.WriteLine(op.Name);
@@ -12,6 +13,7 @@ internal class Options
     }
     public void ShowOption()
     {
+
         Console.WriteLine("__Menu__");
         for (int x = 0; x != options.Count(); x++)
         {
@@ -21,11 +23,14 @@ internal class Options
         string optionString = Console.ReadLine()!;
         int option = int.Parse(optionString);
         this.SelectOption(option);
+
+
         return;
     }
 
     public void SelectOption(int option)
     {
         options[option - 1].Function();
+
     }
 };
