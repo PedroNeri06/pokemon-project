@@ -24,15 +24,7 @@ internal class Main
         {
             if (UrlNotNull[x]._pokemonUrl == "request")
             {
-                //UrlNotNull[x]._pokemon = _PokemonUrl;
-                //Console.WriteLine(_PokemonUrl.Name);
-                //Console.WriteLine(_PokemonUrl.sprites.FrontDefault);
-                //Console.WriteLine(_PokemonUrl.height);
-                //Console.WriteLine(_PokemonUrl.weight);
-                // foreach (PokeType o in _PokemonUrl.types)
-                //{
-                //    Console.WriteLine(o.Type.Name);
-                //}
+
                 UrlNotNull[x].Function();
                 ShowPokemon.ProtocolMain(_PokemonUrl);
                 Console.ReadKey();
