@@ -1,4 +1,5 @@
 ﻿
+using System.Threading.Tasks.Sources;
 using Pokemon.Interface;
 using Pokemon.Modules;
 using Pokemon.Object;
@@ -15,4 +16,4 @@ Client client = new Client();
 
 Main main = new Main(client, options);
 
-main.MenuOptions();
+try { main.MenuOptions(); } catch { Console.WriteLine("você saiu do programa"); }
