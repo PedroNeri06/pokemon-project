@@ -1,9 +1,7 @@
 using System.Text.Json.Serialization;
-using Pokemon.Interface;
+namespace Pokemon.Models;
 
-namespace Pokemon.Object;
-
-public class TypeInfo : ItypeInfor
+public class TypeInfoModel
 {
     [JsonPropertyName("name")]
     public string Name { get; set; }

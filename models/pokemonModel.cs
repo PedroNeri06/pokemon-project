@@ -1,19 +1,18 @@
 using System.Text.Json.Serialization;
-using Pokemon.Interface;
 
-namespace Pokemon.Object;
+namespace Pokemon.Models;
 
-internal class PokemonReal : Ipokemon
+internal class PokemonModel
 {
 
     [JsonPropertyName("name")]
     public string Name { get; set; }
 
     [JsonPropertyName("types")]
-    public List<PokeType> types { get; set; }
+    public List<TypeModel> types { get; set; }
 
     [JsonPropertyName("sprites")]
-    public Sprites sprites { get; set; }
+    public SpritesModel sprites { get; set; }
 
 
     [JsonPropertyName("height")]

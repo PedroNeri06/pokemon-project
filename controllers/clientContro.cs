@@ -1,11 +1,11 @@
-using System.IO.Pipes;
 using System.Text.Json;
+using Pokemon.Models;
 using RestSharp;
 
-namespace Pokemon.Object;
-internal class Client
+namespace Pokemon.Controllers;
+internal class ClientControl
 {
-    public PokemonReal pokemonClient { get; set; }
+    public PokemonModel pokemonClient { get; set; }
     public void Connect(string url)
     {
         try
@@ -16,7 +16,7 @@ internal class Client
                 var result = request.Execute(client);
                 if (result.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    var pokemon = JsonSerializer.Deserialize<PokemonReal>(result.Content!);
+                    var pokemon = JsonSerializer.Deserialize<PokemonModel>(result.Content!);
                     pokemonClient = pokemon!;
 
                 }

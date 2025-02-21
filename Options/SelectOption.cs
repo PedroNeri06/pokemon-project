@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Diagnostics.Tracing;
-using System.Reflection.Metadata.Ecma335;
+
 using Pokemon.Interface;
-using Pokemon.Object;
+using Pokemon.Controllers;
+using Pokemon.Models;
 
 namespace Pokemon.Options;
 
@@ -10,7 +9,7 @@ internal class SelectPokemon : Ioption
 {
     public string Name { get; set; } = "selecionar pokemon";
     public new string? _pokemonUrl { get; set; } = "";
-    public PokemonReal _pokemon { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public PokemonModel _pokemon { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
     public void Function()
     {
@@ -18,7 +17,7 @@ internal class SelectPokemon : Ioption
         {
             Console.WriteLine("Digite o nome de um Pokemon valido");
             string pokemon = Console.ReadLine()!;
-            Client client = new Client();
+            ClientControl client = new ClientControl();
             Ioption show = new ShowPokemon();
             client.Connect($"https://pokeapi.co/api/v2/pokemon/{pokemon}");
             ShowPokemon.ProtocolMain(client.pokemonClient);
@@ -33,11 +32,13 @@ internal class SelectPokemon : Ioption
                     break;
                 case "n":
                     {
+                        Console.Clear();
                         Function();
                     }
                     break;
                 default:
                     {
+                        Console.Clear();
                         Console.WriteLine("resposta invalida digite qualque tecla para continua");
                         Console.ReadKey();
                     }
@@ -47,6 +48,7 @@ internal class SelectPokemon : Ioption
         }
         catch
         {
+            Console.Clear();
             Console.WriteLine("pokemon invalido");
             return;
         }

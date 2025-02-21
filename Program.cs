@@ -1,19 +1,16 @@
-﻿
-using System.Threading.Tasks.Sources;
+﻿using Pokemon.Controllers;
 using Pokemon.Interface;
-using Pokemon.Modules;
-using Pokemon.Object;
 using Pokemon.Options;
 
-Ioption oprion1 = new SelectPokemon();
-Ioption oprion2 = new ShowPokemon();
+Ioption option1 = new SelectPokemon();
+Ioption option2 = new ShowPokemon();
 
-Options options = new Options();
+OptionsControl options = new OptionsControl();
 
-options.AddOption(oprion1);
-options.AddOption(oprion2);
-Client client = new Client();
+options.AddOption(option1);
+options.AddOption(option2);
+ClientControl client = new ClientControl();
 
-Main main = new Main(client, options);
+MainControl main = new MainControl(client, options);
 
 try { main.MenuOptions(); } catch { Console.WriteLine("você saiu do programa"); }

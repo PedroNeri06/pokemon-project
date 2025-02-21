@@ -1,8 +1,7 @@
 using System.Text.Json.Serialization;
-using Pokemon.Interface;
 
-namespace Pokemon.Object;
-public class Sprites : Isprites
+namespace Pokemon.Models;
+public class SpritesModel
 {
     [JsonPropertyName("front_default")]
     public string FrontDefault { get; set; }

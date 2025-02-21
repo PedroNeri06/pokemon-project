@@ -1,8 +1,7 @@
-namespace Pokemon.Modules;
+namespace Pokemon.Controllers;
 using Pokemon.Interface;
-using Pokemon.Object;
 
-internal class Options
+internal class OptionsControl
 {
     public List<Ioption> options = new List<Ioption>();
     public void AddOption(Ioption op)

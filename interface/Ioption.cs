@@ -1,7 +1,3 @@
-using System.Dynamic;
-using System.Reflection.Metadata.Ecma335;
-using Pokemon.Object;
-
 namespace Pokemon.Interface;
 internal interface Ioption
 {

@@ -1,19 +1,19 @@
 using Pokemon.Interface;
-using Pokemon.Object;
+using Pokemon.Models;
 using Pokemon.Options;
 
-namespace Pokemon.Modules;
+namespace Pokemon.Controllers;
 
-internal class Main
+internal class MainControl
 {
-    public Main(Client client, Options options)
+    public MainControl(ClientControl client, OptionsControl options)
     {
         _client = client;
         _options = options;
     }
-    private Client _client;
-    private Options _options;
-    private PokemonReal _PokemonUrl;
+    private ClientControl _client;
+    private OptionsControl _options;
+    private PokemonModel _PokemonUrl;
 
     public void MenuOptions()
     {
