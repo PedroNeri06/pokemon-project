@@ -9,7 +9,8 @@ internal class SelectPokemon : Ioption
 {
     public string Name { get; set; } = "selecionar pokemon";
     public new string? _pokemonUrl { get; set; } = "";
-    public PokemonModel _pokemon { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public PokemonModel _pokemon { get; set; }
+
 
     public void Function()
     {

@@ -6,14 +6,19 @@ internal class OptionsControl
     public List<Ioption> options = new List<Ioption>();
     public void AddOption(Ioption op)
     {
-        Console.WriteLine(op.Name);
+
         options.Add(op);
+
         return;
     }
     public void ShowOption()
     {
 
         Console.WriteLine("__Menu__");
+        for (int x = 0; x != options.Count(); x++)
+        {
+            Console.WriteLine($"{x + 1} - {options[x].Name}");
+        }
         for (int x = 0; x != options.Count(); x++)
         {
             Console.WriteLine($"{x + 1} - {options[x].Name}");
